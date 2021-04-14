@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Form - By Hridoy Saha</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="success" id="success">
+            <p>Your form <strong>Successfully</strong> submitted</p>
+            <span id="timeOne">&times;</span>
+        </div>
+        <div class="failed" id="failed">
+            <p><strong>Failed!</strong> Please enter correct information and try again.</p>
+            <span id="timeTwo">&times;</span>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="sign-in show" id="signInBox">
+                    <h3>Sign In</h3>
+                    <form action="#">
+                        <input type="text" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </form>
+                    <div class="devider">
+                        <span>or</span>
+                    </div>
+                    <div class="other-log">
+                        <a href="#"><span><i class="fab fa-google"></i></span> Login with Google</a>
+                        <a href="#"><span><i class="fab fa-apple"></i></span> Login with Apple</a>
+                    </div>
+                    <div class="option">
+                        <h4>Don't have an account?<a href="#" id="signIn"> Sign up Now.</a></h4>
+                    </div>
+                </div>
+                <div class="sign-up" id="signUpBox">
+                    <h3>Sign Up Free</h3>
+                    <form action="#">
+                        <div class="input-wrap">
+                            <div class="first">
+                                <input type="text" placeholder="First Name" id="fName" required>
+                                <small>Must be 2-15 charecters long and should not start with a number</small>
+                            </div>
+                            <div class="sercond">
+                                <input type="text"  placeholder="Last Name" id="lName" required>
+                                <small>Must be 2-15 charecters long and should not start with a number</small>
+                            </div>
+                        </div>
+                        <div class="input-wrap-all">
+                            <input type="email" placeholder="Email" id="email" required>
+                            <small>Must be 2-15 charecters long and should not start with a number</small>
+                        </div>
+                        <div class="input-wrap-all">
+                            <input type="text" placeholder="Phone" id="phone" required>
+                            <small>Must be 11 digits long</small>
+                        </div>
+                        <input type="date">
+                        <input type="password" placeholder="Enter Password" id="pass" required>
+                        <div class="input-wrap-all">
+                            <input type="password" placeholder="Confirm Password" id="confPass">
+                            <small>Doesn't match! Confirm password again.</small>
+                        </div>
+                        <input type="submit" value="Sign up" id="submitForm">
+                    </form>
+                    <div class="option">
+                        <h4>Already have an account?<a href="#" id="signUp"> Sign in</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
